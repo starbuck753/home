@@ -1,6 +1,7 @@
 body {
 	background-color: #fafaf1;
 	text-align:center;
+	font-family: 'ubuntu', verdana, sans-serif;
 }
 
 .bigtitle{
@@ -109,7 +110,8 @@ a:hover {
 	cursor:pointer;
 }
 
-.parallax { 
+header,
+footer {  /* parallax effect */
     /* The image used */
 	background-image: url("images/header_sm.png");
 	background-color:#fff;
@@ -121,7 +123,26 @@ a:hover {
     background-attachment: fixed;
     background-position: right top;
     background-repeat: no-repeat;
-    /*background-size: cover;*/
+	/*background-size: cover;*/
+
+	font-size: 9pt;
+	line-height: 18px;
+	text-transform: lowercase;
+	padding: 15px 10px;
+}
+
+footer {
+    background-position: right bottom;
+	height: 40px; 
+}
+
+main{
+	width: 960px;
+	font-size: 15px;
+	margin: auto;
+	border: 0px; 
+	padding: 20x 0px;
+	text-align: center;
 }
 
 .titlebox {
@@ -140,13 +161,27 @@ a:hover {
 	opacity:0.95;
 }
 
+.footerbox {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.footer {
+	background-color: #333;
+	color: #eee;
+	padding: 10px 30px;
+	font: 14px 'Dosis', verdana, sans-serif;
+	letter-spacing: 8px;
+	opacity:0.95;
+}
+
 /* .caption span.border {
 	background-color: #333;
 	color: #eee;
 	padding: 20px;
 	font-size: 25px;
 	letter-spacing: 12px;
-	/*opacity:0.95;*/
+	opacity:0.95;
 } */
 
 .social {
@@ -169,6 +204,9 @@ img.social {
 	letter-spacing: 4px;
 	margin-top: 35px;
 	/*opacity:0.95;*/
+
+	/*JUST FOR NOW, UNTIL THERE IS MORE CONTENT*/
+	margin-bottom: 300px;
 }
 
 .maintext.right {
@@ -177,18 +215,6 @@ img.social {
 
 .maintext.left {
 	float: left;
-}
-
-
-DIV.main{
-	width: 990;
-	font-family: verdana, sans-serif;
-	font-size: 11px;
-	margin: auto;
-	border: 0px; 
-	padding: 0px;
-	text-align:center;
-	height: 400px;
 }
 
 DIV.content{
