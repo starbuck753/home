@@ -124,14 +124,30 @@ a:hover {
     /*background-size: cover;*/
 }
 
-.caption span.border {
+.titlebox {
+	text-align: center;
+	margin-top: -25px;
+	padding-bottom: 10px;
+}
+
+.title {
+	background-color: #333;
+	color: #eee;
+	padding: 18px 25px;
+	font: 22px 'Dosis', verdana, sans-serif;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+	opacity:0.95;
+}
+
+/* .caption span.border {
 	background-color: #333;
 	color: #eee;
 	padding: 20px;
 	font-size: 25px;
 	letter-spacing: 12px;
 	/*opacity:0.95;*/
-}
+} */
 
 .social {
 	color: #333;
