@@ -199,26 +199,22 @@ main{
 
 /* ---------------------------------*/
 
-/* .caption span.border {
-	background-color: #333;
-	color: #eee;
-	padding: 20px;
-	font-size: 25px;
-	letter-spacing: 12px;
-	opacity:0.95;
-} */
-
 .social {
-	color: #333;
-	padding: 10px;
 	margin-top: 0px;
-	float: right;
 	opacity:0.95;
 }
 
-img.social {
-	width: 40px;
-	height: 40px;
+.social img {
+	width: 25px;
+	height: 25px;
+	border: 0;
+	margin-top: -8px;
+	vertical-align: middle;
+}
+
+div.social {
+	margin-top: 30px;
+	padding: 0;
 }
 
 .maintext {
