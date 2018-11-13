@@ -117,6 +117,8 @@ main{
 	text-align: left;
 }
 
+/* ----- TITLES --------------------*/
+
 .titlebox {
 	text-align: center;
 	margin-top: -15px;
@@ -136,6 +138,9 @@ main{
 .title.small {
 	font-size: 99%;
 }
+
+/* ---------------------------------*/
+
 
 .footerbox {
 	text-align: right;
