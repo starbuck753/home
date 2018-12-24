@@ -15,7 +15,7 @@ function lastModified(){
 
 function abouticon() {
 
-	var rand1 = Math.floor((Math.random()*7)+1);
+	var rand1 = Math.floor((Math.random()*11)+1);
 	var str = "<img src=\"images/icon_" + rand1 + ".png\" />";
 	
 	document.write(str);
