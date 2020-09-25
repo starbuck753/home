@@ -177,6 +177,7 @@ main{
 .about img {
 	border: 2px solid #f9a80576;
 	padding: 6px;
+	width: 200px;
 	/*margin-left: 20px;*/
 }
 
