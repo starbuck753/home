@@ -161,7 +161,7 @@ main{
 .about {
 	/*margin-left: 20px;*/
 	display: grid;
-	grid-template-columns: 135px 630px;
+	grid-template-columns: 155px 630px;
 	/*grid-template-areas: "gtitle gtitle gtitle" "glabel ginputbox gbutton";*/
 	grid-row-gap: 12px;
 
@@ -177,7 +177,7 @@ main{
 .about img {
 	border: 2px solid #f9a80576;
 	padding: 6px;
-	width: 200px;
+	width: 130px;
 	/*margin-left: 20px;*/
 }
 
