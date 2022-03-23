@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400&family=Quicksand&display=swap');
+
+
 body {
 	background-color: #fafaf1;
 	text-align: center;
-	font-family: 'ubuntu', verdana, sans-serif;
+	font-family: 'Quicksand', verdana, sans-serif;
 }
 
 .bigtitle{
@@ -12,29 +15,27 @@ body {
 	font-weight: bold;
 }
 
-H1{
-	color: #4395b3;
-	background-color: #d0effb;
-	font: 21pt georgia, times new roman, sans-serif;
-	padding: 5px 10px;
-	margin-top: 4px;;
-	border-right: 6px solid #4395b3;
-	/*font-weight: bold;*/
+
+h1{
+	color: #071216;
+	font: 21pt 'Dosis', georgia, sans-serif;
+	padding: 5px 0;
+	margin-top: 4px;
+	text-transform: uppercase;
+	font-weight: 400;
 }
 
-H2{
-	color: #66944d; /*#63aeed; //#03627d;*/
-	border-bottom: 4px solid #cbf4a1;
-	/*border-bottom: 1px solid #8fcbff; //#b0e6f5;*/
-	font: 14pt "trebuchet ms", arial, georgia, verdana, sans-serif;
-	padding: 3px 0 4px 0;
-	margin-bottom: 5px;
-	/*margin: 0;*/
+h2{
+	font: 17pt 'Dosis', georgia, sans-serif;
+	padding: 6px 0 2px 0;
+	margin-top: 4px;
+	text-transform: uppercase;
 }
 
 h3{ 
-	font: 17px 'Dosis', verdana, sans-serif;
+	font: 14px 'Dosis', georgia, sans-serif;
 	color: #444;
+	font-weight: 300;
 }
 
 h4{ 
@@ -53,12 +54,18 @@ blockquote {
 	text-align: justify;
 }
 
+p {
+	padding-bottom: 8px;
+
+}
+
 
 strong, b {
 	color: #f9ab05;
 }
 
 a, a:link, a:visited, a:active {
+	font: 13pt 'quicksand', verdana, sans-serif;
 	color: #f9ab05; 
 	text-decoration: none;
 }
@@ -117,22 +124,84 @@ main{
 	text-align: left;
 }
 
+/* ----- SECTIONS -------------------*/
+
+.section {
+	display: grid;
+	align-items: center;
+	/*grid-template-columns: 450px 450px;*/
+	grid-row-gap: 12px;
+	padding: 40px 13%;
+	/*margin-left: 5%;
+	margin-right: 5%;*/
+	margin-top: -15px;
+}
+
+.section.left {
+	/*grid-template-columns: 620px 280px;*/
+	grid-template-columns: 60% 40%;
+	/*grid-template-areas: "left left";*/
+	justify-items: start;
+	background-color: #fbfbf1;
+	/*text-align: left;*/
+}
+
+.section.right {
+	/*grid-template-columns: 280px 620px;*/
+	grid-template-columns: 40% 60%;
+	/*grid-template-areas: "left right";*/
+	justify-items: end;
+	background-color: #f7f7ea;
+	/*text-align: right;*/
+}
+
+.section div {
+	/*text-align: center;*/
+	padding: 0 10px;
+}
+
+.section img {
+	/*width: 350px;*/
+	border: 10px solid #eee;
+	/*vertical-align: middle;*/
+}
+
+
+.textright {
+	text-align: right;
+}
+
+.textleft {
+	text-align: left;
+}
+
+ul{
+	/*text-align: right;*/
+	list-style: square;
+}
+
+
+/* ---------------------------------*/
+
+
 /* ----- TITLES --------------------*/
 
 .titlebox {
 	text-align: center;
 	margin-top: -15px;
+	/*background-color: #2b2b24;*/
 	/*padding-bottom: 10px;*/
 }
 
 .title {
-	background-color: #333;
+	background-color: #555;
 	color: #eee;
-	padding: 17px 25px;
-	font: 19px 'Dosis', verdana, sans-serif;
-	letter-spacing: 7px;
+	padding: 12px 45px;
+	font: 23px 'Dosis', sans-serif;
+	font-weight: 400;
+	letter-spacing: 8px;
 	text-transform: uppercase;
-	opacity:0.95;
+	/*opacity:0.95;*/
 }
 
 .title.small {
@@ -140,7 +209,6 @@ main{
 }
 
 /* ---------------------------------*/
-
 
 .footerbox {
 	text-align: right;
@@ -156,29 +224,30 @@ main{
 	opacity:0.95;
 }
 
-/* ----- ABOUT ---------------------*/
 
-.about {
+
+/* ----- PORTFOLIO -----------------*/
+
+.portfolio {
 	/*margin-left: 20px;*/
 	display: grid;
-	grid-template-columns: 155px 630px;
+	grid-template-columns: auto;
 	/*grid-template-areas: "gtitle gtitle gtitle" "glabel ginputbox gbutton";*/
 	grid-row-gap: 12px;
-
-	background-color: #ececce;
+	/*background-color: #ececce;*/
 	margin-top: -10px;
 
-	padding: 60px 40px;
+	padding: 40px;
 
 	/*JUST FOR NOW, UNTIL THERE IS MORE CONTENT*/
-	/*height: 300px;*/
+	height: 300px;
 }
 
-.about img {
+.portfolio img {
 	border: 2px solid #f9a80576;
 	padding: 6px;
-	width: 130px;
-	/*margin-left: 20px;*/
+	/*width: 130px;*/
+	margin-left: 20px;
 }
 
 /* ---------------------------------*/
@@ -195,13 +264,18 @@ main{
 	height: 25px;
 	border: 0;
 	margin-top: -8px;
+	padding: 0 5px;
 	vertical-align: middle;
 }
 
-div.social {
-	margin-top: 30px;
-	padding: 0;
+.social a {
+	padding-right: 10px;
 }
+
+/*div.social {
+	margin-top: 2	0px;
+	padding: 0;
+}*/
 
 /* ---------------------------------*/
 
