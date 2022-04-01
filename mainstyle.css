@@ -90,19 +90,18 @@ a:hover {
 	cursor:pointer;
 }
 
-header,
-footer {
+header {
     /* The image used */
 	background-image: url("images/header_sm.png");
 	background-color:#fff;
 
     /* Set a specific height */
-	height: 400px; 
+	height: 300px; 
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: right top;
-    background-repeat: no-repeat;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: right top;
+  background-repeat: no-repeat;
 	/*background-size: cover;*/
 
 	font-size: 9pt;
@@ -112,8 +111,22 @@ footer {
 }
 
 footer {
-	background-position: right bottom;
+	/*background-position: right bottom;*/
 	height: 40px; 
+}
+
+.footerbox {
+	text-align: right;
+	margin-top: 20px;
+}
+
+.footer {
+	background-color: #333;
+	color: #eee;
+	padding: 10px 30px;
+	font: 14px 'Dosis', verdana, sans-serif;
+	letter-spacing: 8px;
+	opacity:0.95;
 }
 
 main{
@@ -126,44 +139,62 @@ main{
 
 /* ----- SECTIONS -------------------*/
 
-.section {
+section {
 	display: grid;
 	align-items: center;
 	/*grid-template-columns: 450px 450px;*/
-	grid-row-gap: 12px;
+	row-gap: 12px;
+	column-gap: 10px;
 	padding: 40px 13%;
 	/*margin-left: 5%;
 	margin-right: 5%;*/
 	margin-top: -15px;
 }
 
-.section.left {
-	/*grid-template-columns: 620px 280px;*/
+.left {
 	grid-template-columns: 60% 40%;
-	/*grid-template-areas: "left left";*/
 	justify-items: start;
 	background-color: #fbfbf1;
 	/*text-align: left;*/
 }
 
-.section.right {
-	/*grid-template-columns: 280px 620px;*/
+.right {
 	grid-template-columns: 40% 60%;
-	/*grid-template-areas: "left right";*/
 	justify-items: end;
 	background-color: #f7f7ea;
 	/*text-align: right;*/
 }
 
-.section div {
+/*section div {*/
 	/*text-align: center;*/
-	padding: 0 10px;
-}
+	/*padding: 0 10px;
+}*/
 
-.section img {
+section img {
 	/*width: 350px;*/
 	border: 10px solid #eee;
 	/*vertical-align: middle;*/
+}
+
+.onecolleft {
+	grid-template-columns: 35%;
+	grid-template-areas: "header";
+	padding: 30px 40px;
+	font: 12pt 'Dosis', georgia, sans-serif;
+	text-transform: uppercase;
+}
+
+.item-header {
+	background-color: #fff;
+	opacity: 93%;
+	border-top-right-radius: 22px;
+	border-bottom-right-radius: 22px;
+	grid-area: "header";
+}
+
+.section.onecolumn b {
+	font-weight: bold;
+	color: #222;
 }
 
 
@@ -180,6 +211,38 @@ ul{
 	list-style: square;
 }
 
+/* ---------------------------------*/
+
+/* ----- ABOUT ---------------------*/
+
+.about {
+	grid-template-columns: 100%;
+	background-color: #f7f7ea;
+	font: 12pt 'Dosis', georgia, sans-serif;
+	text-transform: uppercase;
+}
+
+
+/* ---------------------------------*/
+
+.portfolio {
+	display: grid;
+	grid-template-columns: auto;
+	grid-template-columns: 24% 24% 24%;
+
+	justify-content: center;
+	padding: 50px 40px;
+	font: 12pt 'Dosis', georgia, sans-serif;
+	text-transform: uppercase;
+	column-gap: 12px;
+	row-gap: 12px;
+}
+
+.portfolio img {
+	width: 100%;
+	border: none;
+	border-radius: 22px;
+}
 
 /* ---------------------------------*/
 
@@ -199,7 +262,7 @@ ul{
 	padding: 12px 45px;
 	font: 23px 'Dosis', sans-serif;
 	font-weight: 400;
-	letter-spacing: 8px;
+	letter-spacing: 7px;
 	text-transform: uppercase;
 	/*opacity:0.95;*/
 }
@@ -210,53 +273,12 @@ ul{
 
 /* ---------------------------------*/
 
-.footerbox {
-	text-align: right;
-	margin-top: 20px;
-}
-
-.footer {
-	background-color: #333;
-	color: #eee;
-	padding: 10px 30px;
-	font: 14px 'Dosis', verdana, sans-serif;
-	letter-spacing: 8px;
-	opacity:0.95;
-}
-
-
-
-/* ----- PORTFOLIO -----------------*/
-
-.portfolio {
-	/*margin-left: 20px;*/
-	display: grid;
-	grid-template-columns: auto;
-	/*grid-template-areas: "gtitle gtitle gtitle" "glabel ginputbox gbutton";*/
-	grid-row-gap: 12px;
-	/*background-color: #ececce;*/
-	margin-top: -10px;
-
-	padding: 40px;
-
-	/*JUST FOR NOW, UNTIL THERE IS MORE CONTENT*/
-	height: 300px;
-}
-
-.portfolio img {
-	border: 2px solid #f9a80576;
-	padding: 6px;
-	/*width: 130px;*/
-	margin-left: 20px;
-}
-
-/* ---------------------------------*/
-
 /* ----- SOCIAL --------------------*/
 
 .social {
 	margin-top: 0px;
 	opacity:0.95;
+	text-transform: lowercase;
 }
 
 .social img {
@@ -264,12 +286,11 @@ ul{
 	height: 25px;
 	border: 0;
 	margin-top: -8px;
-	padding: 0 5px;
 	vertical-align: middle;
 }
 
 .social a {
-	padding-right: 10px;
+	padding: 0 18px 0 6px;
 }
 
 /*div.social {
