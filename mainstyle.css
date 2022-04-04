@@ -7,26 +7,21 @@ body {
 	font-family: 'Quicksand', verdana, sans-serif;
 }
 
-.bigtitle{
-	color: #4395b3;
-	font: 35pt georgia, times new roman, sans-serif;
-	padding: 5px 10px;
-	margin-top: 50px;
-	font-weight: bold;
-}
-
 
 H1{
 	color: #071216;
-	font: 21pt 'Dosis', georgia, sans-serif;
-	padding: 5px 0;
-	margin-top: 4px;
+	/*font: 24pt 'Dosis', georgia, sans-serif;*/
+	font: 24pt  'Asap', sans-serif;
+	padding: 14px 0 8px;
+	margin: 0;
 	text-transform: uppercase;
-	font-weight: 400;
+	font-weight: bolder;
+	letter-spacing: 3pt;
+	text-align: center;
 }
 
 h2{
-	font: 17pt 'Dosis', georgia, sans-serif;
+	font: 19pt 'Dosis', georgia, sans-serif;
 	padding: 6px 0 2px 0;
 	margin-top: 4px;
 	text-transform: uppercase;
@@ -145,23 +140,23 @@ section {
 	/*grid-template-columns: 450px 450px;*/
 	row-gap: 12px;
 	column-gap: 10px;
-	padding: 40px 13%;
+	padding: 10px 13%;
 	/*margin-left: 5%;
 	margin-right: 5%;*/
-	margin-top: -15px;
+	/*margin-top: -15px;*/
 }
 
 .left {
 	grid-template-columns: 60% 40%;
 	justify-items: start;
-	background-color: #fbfbf1;
+	/*background-color: #fbfbf1;*/
 	/*text-align: left;*/
 }
 
 .right {
 	grid-template-columns: 40% 60%;
 	justify-items: end;
-	background-color: #f7f7ea;
+	/*background-color: #f7f7ea;*/
 	/*text-align: right;*/
 }
 
@@ -172,8 +167,8 @@ section {
 
 section img {
 	/*width: 350px;*/
-	border: 10px solid #eee;
-	/*vertical-align: middle;*/
+	/*border-radius: 8px;*/
+	border: 8px solid #eee;
 }
 
 .onecolleft {
@@ -211,17 +206,39 @@ ul{
 	list-style: square;
 }
 
+.lightbg {
+	background-color: #fbfbf1;
+}
+
+.darkbg {
+	background-color: #f7f7ea;
+}
+
+
 /* ---------------------------------*/
 
 /* ----- ABOUT ---------------------*/
 
 .about {
-	grid-template-columns: 100%;
-	background-color: #f7f7ea;
+	grid-template-columns: 30% 70%;
+	background-color: #5e5e57;
 	font: 12pt 'Dosis', georgia, sans-serif;
 	text-transform: uppercase;
+	justify-items: right;
+	color:#fbfbf1;
 }
 
+.about img{
+	width: 130px;
+	border-radius: 8px;
+	border: 7px solid #a8a89c;
+}
+
+.about h1 {
+	color: #fbfbf1;
+	background-color: #5e5e57;
+	font-size: 21pt;
+}
 
 /* ---------------------------------*/
 
@@ -257,13 +274,15 @@ ul{
 }
 
 .title {
-	background-color: #555;
-	color: #eee;
+	/*background-color: #555;
+	color: #eee;*/
+	color: #555;
 	padding: 12px 45px;
 	font: 23px 'Dosis', sans-serif;
 	font-weight: 400;
 	letter-spacing: 7px;
 	text-transform: uppercase;
+	text-align: center;
 	/*opacity:0.95;*/
 }
 
